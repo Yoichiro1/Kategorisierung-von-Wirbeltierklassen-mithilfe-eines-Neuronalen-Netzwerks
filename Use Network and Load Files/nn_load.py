@@ -43,7 +43,7 @@ def reformat_image():
     elif ext.lower() == '.png':
         Bild = Bild.convert('RGB')
     Bild.save(os.path.join(dir, f"{name}.jpg"))
-
+reformat_image()
 img =Image.open(folder_selected)
 img =image.resize((200,200))
 img.save(folder_selected)
