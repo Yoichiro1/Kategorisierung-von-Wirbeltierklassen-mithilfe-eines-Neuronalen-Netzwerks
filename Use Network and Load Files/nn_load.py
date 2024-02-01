@@ -47,8 +47,17 @@ reformat_image()
 img =Image.open(folder_selected)
 img =image.resize((200,200))
 img.save(folder_selected)
- 
-#zu np konvertieren
 
+
+#zu np konvertieren
+normalized_image=[]
+
+image = cv2.imread(img)
+image = image.astype(np.float32)
+max_intensity = 255.0  # For 8-bit images
+normalized_custom = image / max_intensity
+normalized_image.append(normalized_custom)
+np.array(normalized_image)
+#Modell Anwenden
 prediction = model.predict(input_data) #GPT
 print(prediction)
