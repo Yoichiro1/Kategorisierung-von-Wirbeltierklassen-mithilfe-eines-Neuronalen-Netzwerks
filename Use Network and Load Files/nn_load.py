@@ -7,6 +7,7 @@ import PIL
 from PIL import Image
 import cv2
 import numpy as np
+
 def nn_auswählen():
     nn_given = False  
     nn_selected = fd.askopenfilename()
@@ -48,10 +49,9 @@ def reformat_image():
     elif ext.lower() == '.png':
         Bild = Bild.convert('RGB')
     Bild.save(os.path.join(dir, f"{name}.jpg"))
-reformat_image()
-img =Image.open(folder_selected)
-img =image.resize((200,200))
-img.save(folder_selected)
+    img =Image.open(folder_selected)
+    img =image.resize((200,200))
+    img.save(folder_selected)
 
 
 def image_to_np():
