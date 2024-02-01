@@ -30,5 +30,5 @@ img.save(folder_selected)
  
 #zu np konvertieren
 
-predictions = model.predict(input_data) #GPT
+prediction = model.predict(input_data) #GPT
 print(prediction)
