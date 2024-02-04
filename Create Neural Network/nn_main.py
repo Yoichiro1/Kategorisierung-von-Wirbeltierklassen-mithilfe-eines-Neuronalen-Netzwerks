@@ -17,9 +17,11 @@ def normalize_images():
 
  naming_scheme = '{}_{}.jpg' 
  amount = 2500
-
- for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(klasse, i))
+ os.chdir(train_dir)
+ for count, f in enumerate(os.listdir()):
+    f_name, f_ext = os.path.splitext(f)
+    for i in range(1, amount + 1):
+    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
 
     # Check if the file exists GPT
     if not os.path.exists(filename):
@@ -49,8 +51,11 @@ def normalize_test():
  normalized_test = []
  naming_scheme = '{}_{}.jpg' 
  amount=200
- for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(klasse, i))
+ os.chdir(test_dir)
+ for count, f in enumerate(os.listdir()):
+    f_name, f_ext = os.path.splitext(f)
+    for i in range(1, amount + 1):
+    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
 
     if not os.path.exists(filename):
         print(f"Error: File {filename} not found")
