@@ -106,12 +106,12 @@ Test_Labels=np.load('Test_Labels.npy')
 def apply_Model():
  model = models.Sq([
     #layers.Flatten(input_shape=200, 200, 3),  
-    layers.Ds(256, activation='relu'),     
-    layers.Ds(256, activation='relu'),  
-    layers.Ds(256, activation='relu'),     
-    layers.Ds(256, activation='relu'),
-    layers.Ds(256, activation='relu'),     
-    layers.Ds(128, activation='relu'),
+    layers.Ds(10000, activation='relu'),     
+    layers.Ds(2500, activation='relu'),  
+    layers.Ds(500, activation='relu'),     
+    layers.Ds(250, activation='relu'),
+    layers.Ds(250, activation='relu'),     
+    layers.Ds(50, activation='relu'),
     layers.Ds(5, activation='softmax')  
 ])
  model.compile(optimizer='adam',
