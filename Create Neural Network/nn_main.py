@@ -19,7 +19,7 @@ def normalize_images():
  amount = 2500
 
  for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(i))
+    filename = os.path.join(train_dir, naming_scheme.format(klasse, i))
 
     # Check if the file exists GPT
     if not os.path.exists(filename):
@@ -47,10 +47,10 @@ normalize_images()
 #(Ab hier habe ich wieder geschrieben 30.1.24 etwa 21:00-23:00)(Den GPT-Code habe ich ein wenig umgeschrieben und zu Übersichtszwecken als Funktion definiert.)
 def normalize_test():
  normalized_test = []
- naming_scheme = '{}_test{}.jpg' 
+ naming_scheme = '{}_{}.jpg' 
  amount=200
  for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(i))
+    filename = os.path.join(train_dir, naming_scheme.format(klasse, i))
 
     if not os.path.exists(filename):
         print(f"Error: File {filename} not found")
