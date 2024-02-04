@@ -107,9 +107,9 @@ def apply_Model():
  model = models.Sq([
     #layers.Flatten(input_shape=200, 200, 3),  
     layers.Ds(256, activation='relu'),     
-    layers.Ds(128, activation='relu'),  
+    layers.Ds(256, activation='relu'),  
     layers.Ds(256, activation='relu'),     
-    layers.Ds(128, activation='relu'),
+    layers.Ds(256, activation='relu'),
     layers.Ds(256, activation='relu'),     
     layers.Ds(128, activation='relu'),
     layers.Ds(5, activation='softmax')  
