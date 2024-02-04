@@ -1,7 +1,5 @@
-import pandas as pd
 import numpy as np
 import cv2
-import keyboard as kb
 import random as rd
 import math as m
 from keras.models import Sequential as sq
