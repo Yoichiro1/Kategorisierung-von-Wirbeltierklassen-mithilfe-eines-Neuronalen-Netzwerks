@@ -15,8 +15,8 @@ test_dir = r"C:\Users\username\test_data"
 def normalize_images():
  normalized_images = []
 
- naming_scheme = 'fisch_{}.jpg' 
- amount = 1
+ naming_scheme = '{}_{}.jpg' 
+ amount = 2500
 
  for i in range(1, amount + 1):
     filename = os.path.join(train_dir, naming_scheme.format(i))
@@ -47,8 +47,8 @@ normalize_images()
 #(Ab hier habe ich wieder geschrieben 30.1.24 etwa 21:00-23:00)(Den GPT-Code habe ich ein wenig umgeschrieben und zu Übersichtszwecken als Funktion definiert.)
 def normalize_test():
  normalized_test = []
- naming_scheme = '{}_{}.jpg' 
- amount=100
+ naming_scheme = '{}_test{}.jpg' 
+ amount=200
  for i in range(1, amount + 1):
     filename = os.path.join(train_dir, naming_scheme.format(i))
 
