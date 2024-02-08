@@ -7,20 +7,30 @@ import PIL
 from PIL import Image
 import cv2
 import numpy as np
-
+bild_given=False
+nn_given = False
+folder_name = ""
+folder_selected = ""
+ordnerpfad = ""
+nn_selected = ""
 def nn_auswählen():
+    global nn_given
+    global nn_selected
     nn_given = False  
     nn_selected = fd.askopenfilename()
-    nn_name = os.path.basename(folder_selected)
-    if folder_name.find(".keras") != -1:
+    nn_name = os.path.basename(nn_selected)
+    if nn_name.find(".keras") != -1:
         nn_given = True            
     else:    
         r3 = Tk()
-        w3 = Label(r3, text="Error. File is not an ".keras" file.")
+        w3 = Label(r3, text="Error. File is not an keras file.")
         w3.pack()
         r3.mainloop()
 
 def bild_auswählen():
+    global bild_given
+    global folder_name
+    global folder_selected
     bild_given = False  
     folder_selected = fd.askopenfilename()
     folder_name = os.path.basename(folder_selected)
@@ -36,9 +46,12 @@ def bild_auswählen():
         r2.mainloop()
 
 def reformat_image(): 
+    global folder_name
+    global folder_selected
+    global ordnerpfad
+    Bild = Image.open(folder_selected)
+    ordnerpfad = os.path.dirname(folder_selected)
     name, ext = os.path.splitext(folder_name)
-    image_path = os.path.join(dir, folder_name)
-    Bild = Image.open(image_path)
     if ext.lower() == '.gif': 
         Bild.seek(0)  
         Bild = Bild.convert("RGB")  
@@ -48,26 +61,21 @@ def reformat_image():
         Bild = Bild.convert('RGB')
     elif ext.lower() == '.png':
         Bild = Bild.convert('RGB')
-    Bild.save(os.path.join(dir, f"{name}.jpg"))
+    Bild.save(os.path.join(ordnerpfad, f"{name}.jpg"))
     img =Image.open(folder_selected)
-    img =image.resize((200,200))
+    img =img.resize((200,200))
     img.save(folder_selected)
 
-
-def image_to_np():
-    normalized_image=[]
-    image = cv2.imread(img)
-    image = image.astype(np.float32)
-    max_intensity = 255.0  # For 8-bit images
-    normalized_custom = image / max_intensity
-    normalized_image.append(normalized_custom)
-    input_data = np.array(normalized_image)
-
 def predict():
+    global bild_given, nn_given
+    global ordnerpfad
+    global nn_selected
     if bild_given and nn_given == True:
         reformat_image()
-        image_to_np()
-        prediction = model.predict(input_data) #GPT    
+        train_ds = keras.utils.image_dataset_from_directory(
+        directory=os.path.dirname(ordnerpfad), image_size=(200, 200) )
+        model = keras.saving.load_model(nn_selected)
+        prediction = model.predict(train_ds) #GPT    
         r4 = Tk()
         w4 = Label(r4, text=prediction)
         w4.pack()
