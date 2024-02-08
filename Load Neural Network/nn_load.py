@@ -16,7 +16,7 @@ root = Tk()
 root.withdraw()
 
 image_given = False
-while image_given = False  
+while image_given == False:
     folder_selected = fd.askopenfilename()
     folder_name = os.path.basename(folder_selected)
     if folder_name.find(".jpg" or ".jpeg" or ".png") != -1: #GPT
@@ -25,7 +25,7 @@ while image_given = False
         print("Error")
 
 img =Image.open(folder_selected)
-img =image.resize((200,200))
+img =img.resize((200,200))
 img.save(folder_selected)
  
 #zu np konvertieren

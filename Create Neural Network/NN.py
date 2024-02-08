@@ -1,4 +1,6 @@
 import numpy as np
+import PIL
+from PIL import Image
 import cv2
 import random as rd
 import math as m
@@ -10,56 +12,54 @@ import os
 #DISCLAIMER:For future me, Yo or anyone else who actually might be good at coding, I'm sorry.
 
 #BEFORE: REPLACE AMOUNT OF IMAGES, DIR NAME AND MAKE ALL IMAGES .JPG FILES
-train_dir = r"C:\Users\username\training_data"
-test_dir = r"C:\Users\username\test_data"
-def normalize_images():
- normalized_images = []
+train_dir = r"C:\Users\aokik\pyworks\allimages"
+test_dir = r"C:\Users\aokik\pyworks\alltestimages"
+#Ab hier habe ich wieder geschrieben 30.1.24 etwa 21:00-23:00)(Den GPT-Code habe ich ein wenig umgeschrieben und zu Übersichtszwecken als Funktion definiert.)
+def normalize_images(train_dir):
+    normalized_images = []
+    naming_scheme= "{}{}"
+    amount = 2500
+    os.chdir(train_dir)
+    for count, f in enumerate(os.listdir()):
+        f_name, f_ext = os.path.splitext(f)
+        for i in range(1):
+            filename = os.path.join(train_dir, naming_scheme.format(f_name, f_ext))
+        # Check if the file exists
+            if not os.path.exists(filename):
+                print(f"Error: File {filename} not found")
+                continue
 
- naming_scheme = '{}_{}.jpg' 
- amount = 2500
- os.chdir(train_dir)
- for count, f in enumerate(os.listdir()):
-    f_name, f_ext = os.path.splitext(f)
-    for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
+        image = cv2.imread(filename)
 
-    # Check if the file exists GPT
-    if not os.path.exists(filename):
-        print(f"Error: File {filename} not found")
-        continue
-    image = cv2.imread(filename)
+        # Convert the image to float32 to perform division
+        image = cv2.convertScaleAbs(image, alpha=(1.0/255.0))
 
-    # Convert the image to float32 to perform division GPT
-    image = image.astype(np.float32)
 
-    # Normalize pixel values to the range [0, 1] GPT
-    max_intensity = 255.0  # For 8-bit images
-    normalized_image = image / max_intensity
 
-    
-  # Append original and normalized images to lists GPT
-    normalized_images.append(normalized_image)
+        # Append original and normalized images to the list
+        normalized_images.append(normalized_images)
 
- # Convert lists to NumPy arrays
- normalized_images = np.array(normalized_images)
+    # Convert the list to a NumPy array
+    normalized_images = np.array(normalized_images)
 
- # Save NumPy arrays to files GPT
- np.save('Normalized_Images.npy', normalized_images)
-normalize_images()
-#(Ab hier habe ich wieder geschrieben 30.1.24 etwa 21:00-23:00)(Den GPT-Code habe ich ein wenig umgeschrieben und zu Übersichtszwecken als Funktion definiert.)
+    # Save NumPy arrays to files
+    np.save('Normalized_Images.npy', normalized_images)
+
+# Beispielaufruf mit einem Verzeichnis für Trainingsdaten
+normalize_images(train_dir)
+
 def normalize_test():
  normalized_test = []
- naming_scheme = '{}_{}.jpg' 
+ naming_scheme= "{}{}"
  amount=200
  os.chdir(test_dir)
  for count, f in enumerate(os.listdir()):
     f_name, f_ext = os.path.splitext(f)
-    for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
-
-    if not os.path.exists(filename):
-        print(f"Error: File {filename} not found")
-        continue
+    for i in range(1):
+        filename = os.path.join(train_dir, naming_scheme.format(f_name, f_ext))
+        if not os.path.exists(filename):
+            print(f"Error: File {filename} not found")
+            continue
     image = cv2.imread(filename)
     image = image.astype(np.float32)
     max_intensity = 255.0  # For 8-bit images
@@ -75,6 +75,8 @@ def normalize_test():
  # Save NumPy arrays to files GPT
  np.save('Testdaten.npy', normalized_test)
 normalize_test()
+
+#ERSCHAFFUNG DER LABEL
 #ERSCHAFFUNG DER LABEL
 def create_labels():
  labels=[]
@@ -109,12 +111,12 @@ Test_Labels=np.load('Test_Labels.npy')
 def apply_Model():
  model = models.Sq([
     #layers.Flatten(input_shape=200, 200, 3),  
-    layers.Ds(10000, activation='relu'),     
-    layers.Ds(2500, activation='relu'),  
-    layers.Ds(500, activation='relu'),     
-    layers.Ds(250, activation='relu'),
-    layers.Ds(250, activation='relu'),     
-    layers.Ds(50, activation='relu'),
+    layers.Ds(256, activation='relu'),     
+    layers.Ds(256, activation='relu'),  
+    layers.Ds(256, activation='relu'),     
+    layers.Ds(128, activation='relu'),
+    layers.Ds(64, activation='relu'),     
+    layers.Ds(32, activation='relu'),
     layers.Ds(5, activation='softmax')  
 ])
  model.compile(optimizer='adam',
