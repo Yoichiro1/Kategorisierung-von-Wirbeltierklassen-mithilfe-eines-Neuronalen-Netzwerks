@@ -11,4 +11,5 @@ PIP INSTALLS:
 4.  pip install PIL
 5.  pip install numpy
 6.  pip install keyboard
+7.  pip install simple_image_download
 
