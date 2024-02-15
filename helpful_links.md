@@ -29,3 +29,7 @@ https://medium.com/@anpuntam/how-to-download-images-from-google-using-python-ea4
 ### Bing Image Downloader:
 
 https://www.youtube.com/watch?v=5VHMjieiy4g
+
+### .MD File Syntax Guide 
+
+https://www.markdownguide.org/basic-syntax/
