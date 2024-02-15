@@ -9,6 +9,8 @@ from keras.utils import to_categorical
 from keras import layers 
 from keras import models
 import os
+#REPLACE DIR VARIABLES
+
 
 dir = r'C:\Users\gabri\images\allimages'
 
@@ -22,7 +24,8 @@ Labels = np.load(labels_path)
 Testdaten = np.load(test_data_path)
 Test_Labels = np.load(test_labels_path)
 
-# Encode labels using Keras
+
+# Encode labels using Keras GPT
 label_to_index = {label: index for index, label in enumerate(np.unique(Labels))}
 index_to_label = {index: label for label, index in label_to_index.items()}
 
@@ -34,11 +37,10 @@ Test_Labels = to_categorical(Test_Labels_encoded)
 Normalisierte_Bilder = Normalisierte_Bilder.reshape(-1, 200, 200, 3)
 Testdaten= Testdaten.reshape(-1, 200, 200, 3)
 
-#CONSTRUCTING MODEL
+#CONSTRUCTING MODEL 
 def apply_Model():
-    # Reshape the input images to match the expected input shape of the model GPT
     model = models.Sequential([
-        layers.Flatten(input_shape=(200, 200, 3)),  
+        layers.Flatten(input_shape=(200, 200, 3)),
         layers.Dense(2048, activation='relu'),     
         layers.Dense(1024, activation='relu'),  
         layers.Dense(1024, activation='relu'),     
