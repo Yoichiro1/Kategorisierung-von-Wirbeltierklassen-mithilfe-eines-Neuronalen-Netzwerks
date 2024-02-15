@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import os
-
+#REPLACE DIR VARIABLES
 train_dir = r"C:\Users\gabri\images\allimages"
 test_dir = r"C:\Users\gabri\images\alltestimages"
 
