@@ -1,31 +1,31 @@
 
-#**Concepts/Explanations:**
+# **Concepts/Explanations:**
 
 
 
-##3Blue1Brown Neural Network course(aka Grant Sanderson):
+## 3Blue1Brown Neural Network course(aka Grant Sanderson):
 
-###https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
-
-
+### https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 
 
 
-#**Python Tutorials:**
 
 
-##List Tutorial
+# **Python Tutorials:**
 
-###https://www.programiz.com/python-programming/list
 
-##tkinter button:
+## List Tutorial
 
-###https://www.pythontutorial.net/tkinter/tkinter-button/
+### https://www.programiz.com/python-programming/list
 
-##Google Image Downloader:
+## tkinter button:
 
-###https://medium.com/@anpuntam/how-to-download-images-from-google-using-python-ea4fbc49b3a5
+### https://www.pythontutorial.net/tkinter/tkinter-button/
 
-Bing Image Downloader:
+## Google Image Downloader:
 
-https://www.youtube.com/watch?v=5VHMjieiy4g
+### https://medium.com/@anpuntam/how-to-download-images-from-google-using-python-ea4fbc49b3a5
+
+## Bing Image Downloader:
+
+### https://www.youtube.com/watch?v=5VHMjieiy4g
