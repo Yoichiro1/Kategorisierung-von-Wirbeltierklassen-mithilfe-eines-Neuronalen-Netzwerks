@@ -8,8 +8,9 @@
 1.  pip install cv2
 2.  pip install tk
 3.  pip install tensorflow
-4.  pip install PIL
-5.  pip install numpy
-6.  pip install keyboard
-7.  pip install simple_image_download
+4.  pip install keras
+5.  pip install PIL
+6.  pip install numpy
+8.  pip install simple_image_download
+9.  pip install bing_image_downloader  
 
