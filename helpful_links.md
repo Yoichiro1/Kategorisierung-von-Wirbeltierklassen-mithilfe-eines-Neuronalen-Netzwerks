@@ -16,6 +16,10 @@ https://playground.tensorflow.org
 
 ## **Python Tutorials:**
 
+### Explaining Module Keras
+
+https://keras.io/guides/
+
 ### Explaining Numpy Arrays
 
 https://numpy.org/doc/stable/reference/generated/numpy.array.html
@@ -29,6 +33,10 @@ https://www.programiz.com/python-programming/list
 
 [https://www.pythontutorial.net/tkinter/tkinter-button/](https://www.python-lernen.de/tkinter-gui.htm)
 
+### Explaining Module OS
+
+https://www.python-lernen.de/python-modul-os.htm
+
 ### Google Image Downloader
 
 https://medium.com/@anpuntam/how-to-download-images-from-google-using-python-ea4fbc49b3a5
@@ -40,3 +48,4 @@ https://www.youtube.com/watch?v=5VHMjieiy4g
 ### .MD File Syntax Guide 
 
 https://www.markdownguide.org/basic-syntax/
+
