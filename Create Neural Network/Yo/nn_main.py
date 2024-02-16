@@ -21,7 +21,7 @@ def normalize_images():
  for count, f in enumerate(os.listdir()):
     f_name, f_ext = os.path.splitext(f)
     for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
+     filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
 
     # Check if the file exists GPT
     if not os.path.exists(filename):
@@ -55,7 +55,7 @@ def normalize_test():
  for count, f in enumerate(os.listdir()):
     f_name, f_ext = os.path.splitext(f)
     for i in range(1, amount + 1):
-    filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
+     filename = os.path.join(train_dir, naming_scheme.format(f_name, i))
 
     if not os.path.exists(filename):
         print(f"Error: File {filename} not found")
