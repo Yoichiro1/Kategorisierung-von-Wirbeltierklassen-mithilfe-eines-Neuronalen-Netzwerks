@@ -27,7 +27,7 @@ https://www.programiz.com/python-programming/list
 
 ### Tkinter button
 
-https://www.pythontutorial.net/tkinter/tkinter-button/
+[https://www.pythontutorial.net/tkinter/tkinter-button/](https://www.python-lernen.de/tkinter-gui.htm)
 
 ### Google Image Downloader
 
