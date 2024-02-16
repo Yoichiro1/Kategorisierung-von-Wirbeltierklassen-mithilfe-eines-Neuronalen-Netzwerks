@@ -16,6 +16,10 @@ https://playground.tensorflow.org
 
 ## **Python Tutorials:**
 
+### Explaining Numpy Arrays
+
+https://numpy.org/doc/stable/reference/generated/numpy.array.html
+
 
 ### List Tutorial
 
