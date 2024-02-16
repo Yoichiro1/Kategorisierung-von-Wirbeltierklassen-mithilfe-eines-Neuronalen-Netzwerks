@@ -20,7 +20,7 @@ def normalize_images(directory):
                 normalized_image = image.astype(np.float32) / 255.0
                 normalized_images.append(normalized_image)
                 # Extract class label from filename
-                label = filename.split('_')[0]  # Assuming label is before the first underscore
+                label = filename.split('_')[0]  # Assuming label is before the first underscore GPT
                 labels.append(label)
 
     # Convert lists to NumPy arrays
