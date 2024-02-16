@@ -1,7 +1,6 @@
 import numpy as np
 import cv2
 import random as rd
-import math as m
 from keras.models import Sequential as Sq
 from keras.layers import Dense as Ds
 from keras.layers import Conv2D, MaxPooling2D, Flatten
@@ -25,15 +24,19 @@ Testdaten = np.load(test_data_path)
 Test_Labels = np.load(test_labels_path)
 
 
-# Encode labels using Keras GPT
+# Index Labels GPT 
 label_to_index = {label: index for index, label in enumerate(np.unique(Labels))}
 index_to_label = {index: label for label, index in label_to_index.items()}
 
+#Create an array of indexed Labels
 Labels_encoded = np.array([label_to_index[label] for label in Labels])
 Test_Labels_encoded = np.array([label_to_index[label] for label in Test_Labels])
 
+#Encode Labels GPT
 Labels = to_categorical(Labels_encoded)
 Test_Labels = to_categorical(Test_Labels_encoded)
+
+#Reshaping the numpy arrays so they can fit the Network
 Normalisierte_Bilder = Normalisierte_Bilder.reshape(-1, 200, 200, 3)
 Testdaten= Testdaten.reshape(-1, 200, 200, 3)
 
