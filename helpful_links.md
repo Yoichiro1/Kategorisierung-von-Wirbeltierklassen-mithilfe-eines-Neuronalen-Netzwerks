@@ -29,9 +29,9 @@ https://numpy.org/doc/stable/reference/generated/numpy.array.html
 
 https://www.programiz.com/python-programming/list
 
-### Tkinter button
+### Explaining Module Tkinter
 
-[https://www.pythontutorial.net/tkinter/tkinter-button/](https://www.python-lernen.de/tkinter-gui.htm)
+https://www.python-lernen.de/tkinter-gui.htm
 
 ### Explaining Module OS
 
