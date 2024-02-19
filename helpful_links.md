@@ -40,6 +40,7 @@ https://www.python-lernen.de/python-modul-os.htm
 ### Google Image Downloader
 
 https://medium.com/@anpuntam/how-to-download-images-from-google-using-python-ea4fbc49b3a5
+(FUNKTIONIERT NICHT, MUESS ALTERNATIVE FINDE)
 
 ### Bing Image Downloader
 
