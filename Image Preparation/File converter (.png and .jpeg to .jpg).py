@@ -25,4 +25,7 @@ for filename in os.listdir(dir):
         Bild = Bild.convert('RGB')
     elif ext.lower() == '.img':
         Bild = Bild.convert('RGB')
+    elif ext.lower() == ".jpg":
+        continue
     Bild.save(os.path.join(dir, f"{name}.jpg"))
+    os.remove(os.path.join(dir, os.path.basename(filename)))
