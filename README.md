@@ -1,5 +1,5 @@
-## Before:
-1. Download the Anaconda Distribution (https://www.anaconda.com/download)
+## Vorbereitung:
+1. Die Anaconda Distribution herunterladen (https://www.anaconda.com/download)
 2. Download Python
 3. Copy the PIP Installs into your Code Editor of Choice (We reccomend VS Code)
 4. Change the Directory (dir) variables (Code Containing such variables will have a comment just under all the library imports)
