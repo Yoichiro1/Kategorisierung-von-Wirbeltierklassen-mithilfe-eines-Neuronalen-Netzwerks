@@ -7,7 +7,7 @@ from tkinter import filedialog as fd
 from PIL import Image, ImageTk
 import numpy as np
 import shutil
-
+#Importing modules
 bild_given = False
 nn_given = False
 folder_name = ""
@@ -15,13 +15,16 @@ folder_selected = ""
 ordnerpfad = ""
 nn_selected = ""
 copy_path = ""
+#Establishing variables/types
 
 def nn_auswählen():
     global nn_given
     global nn_selected
     nn_given = False  
     nn_selected = fd.askopenfilename()
+    #definiert nn_selected als ausgewählte Datei
     nn_name = os.path.basename(nn_selected)
+    #definiert name für preview text box
     if nn_name.endswith(".keras"):
         nn_given = True
         nn_label.config(text="Selected Neural Network: " + nn_name)  # Update the label with the selected neural network name
@@ -81,12 +84,13 @@ def reformat_image():
         Bild = Bild.convert('RGB')
     elif ext.lower() == '.png':
         Bild = Bild.convert('RGB')
+    #Format wird zu JPG geändert
     
-    # Create a copy of the original image
+    # Eine Kopie des Ausgewählten Bildes machen
     copy_path = os.path.join(ordnerpfad, f"{name}_copy{ext}")
     shutil.copyfile(folder_selected, copy_path)
 
-    # Resize the copied image
+    # Die Grösse der Kopie konfigurieren
     img = Image.open(copy_path)
     img = img.resize((50,50))
     img.save(copy_path)
@@ -127,7 +131,7 @@ def predict():
         elif prediction == prediction_v:
             prediction_tier = "Vogel"
         
-        # Display the prediction beneath the image preview
+        # Zeigt Prediction Label unterhalb vom Bild
         prediction_label.config(text="Prediction: " + prediction_tier, fg= 'white')
     else:
         r5 = Tk()
@@ -135,7 +139,7 @@ def predict():
         w5.pack()
         r5.mainloop()
 
-    # Delete the copied image after processing
+    # Löscht Bildkopie nach dem Processing
     if os.path.exists(copy_path):
         os.remove(copy_path)
     else:
@@ -143,30 +147,34 @@ def predict():
 
         
 r = tk.Tk()
-r.geometry("1080x1920")
+r.geometry("1920x1080")
 r.title('Neuronales Netzwerk')
-r.configure(bg='#282927')  # Set background color
+r.configure(bg='#282927')
+
+#hauptvariabeln definieren
 
 # Neural Network Label
 nn_label = Label(r, text="", bg='#282927', fg='white', font= (None, 16))
 nn_label.pack()
 
-# Load and display the image
+# Das Bild laden und als Preview zeigen
 label_preview = Label(r)
 label_preview.pack()
 
-# Display prediction label
+# Prediction Label zeigen
 prediction_label = Label(r, text="", bg= '#282927', font= (None, 16))
 prediction_label.pack()
 
-# Buttons
 button_image = tk.Button(r, text='Upload image', width=25, command=bild_auswählen, bg= '#303633' , fg='white')
 button_nn = tk.Button(r, text='Upload your Neural Network', width=25, command=nn_auswählen, bg= '#303633' , fg='white')
 button_predict = tk.Button(r, text='Predict', width=25, command=predict, bg= '#303633' , fg='white')
 button_quit = tk.Button(r, text='Quit', width=25, command=r.destroy, bg= '#303633' , fg='white')
+#Definiert genauere Details der Buttons für das GUI
+
 button_image.pack()
 button_nn.pack()
 button_predict.pack()
 button_quit.pack()
+#Überträgt button variabeln auf das GUI
 
 r.mainloop()
