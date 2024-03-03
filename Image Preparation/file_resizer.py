@@ -1,9 +1,10 @@
 import os
 import PIL
 from PIL import Image
-dir=r'C:\Users\username\directory'
+
+dir=r'' # absoluter Pfad zum Ordner, worin die Bilder gespeichert sind.
 for file in os.listdir(dir):
-    Bild=dir+'/'+file
-    img=Image.open(Bild)
-    img=img.resize((200,200))
-    img.save(Bild)
+    Bild=os.path.join(file, dir)
+    img=Image.open(Bild) # Lädt das Bild
+    img=img.resize((200,200)) # Verändert die Grösse/ Auflösung des Bildes. Grösse Angeben.
+    img.save(Bild) # Speichert das Bild im gleichen Ordner.
