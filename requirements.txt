@@ -1,1 +1,7 @@
-
+pip install cv2
+pip install tk
+pip install tensorflow
+pip install keras
+pip install PIL
+pip install numpy
+pip install bing_image_downloader
