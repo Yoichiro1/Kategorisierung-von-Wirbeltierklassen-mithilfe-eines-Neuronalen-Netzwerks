@@ -13,5 +13,6 @@
 4.  pip install keras
 5.  pip install PIL (old nn_main)
 6.  pip install numpy
-7.  pip install bing_image_downloader (web scraper) 
+7.  pip install bing_image_downloader (web scraper)
+8.  pip install shutil
 
