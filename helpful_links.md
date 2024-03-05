@@ -20,6 +20,10 @@ https://playground.tensorflow.org
 
 https://keras.io/guides/
 
+### Auto-generated requirements.txt
+
+https://stackoverflow.com/questions/46419607/how-to-automatically-install-required-packages-from-a-python-script-as-necessary
+
 ### Explaining Numpy Arrays
 
 https://numpy.org/doc/stable/reference/generated/numpy.array.html
