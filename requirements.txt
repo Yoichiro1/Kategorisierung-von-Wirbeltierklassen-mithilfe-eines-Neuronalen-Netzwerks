@@ -1,3 +1,5 @@
+#VERSIONEN HINSCHREIBEN
+
 pip install cv2
 pip install tk
 pip install tensorflow
