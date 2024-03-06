@@ -68,6 +68,7 @@ def apply_Model():
         layers.Dense(5, activation="softmax"), # Output-Layer mit 5 Neuronen für 5 Klassen und mit der Aktivierungsfunktion "softmax" (wandelt jede Ausgabe in Dezimaldarstellung des Anteils der Ausgabe von der Summe der Ausgaben um)
     ])
     # Modell für das Training konfigurieren
+    global history
     history = model.compile(optimizer= keras.optimizers.Adam(learning_rate = 0.001), # Definiert den Optimierer des Modells als "adam" (eine stochastische Gradientenabstiegsmethode, die auf der adaptiven Schätzung von Momenten erster und zweiter Ordnung basiert) mit Learning-Rate von 0.0005
                   loss='categorical_crossentropy', # Definiert Loss-Funktion als "categorical_crossentropy": 
                   metrics=['accuracy']) # Definiert die Metrik (beurteil das Modell) als "accuracy" (gibt die Genauigkeit in Dezimaldarstellung an)
