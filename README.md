@@ -1,5 +1,5 @@
 ## Vorwort
-Die folgende READMDE wurde nur für Benutzer von Windows 10/11 verfasst.
+Die folgende READMDE wurde nur für Benutzer von Windows 10/11 verfasst, die Programme wurden nur mit Python 3.11/3.12 getestet.
 
 Clarify Licensing and Legal
 
@@ -9,7 +9,7 @@ Clarify Licensing and Legal
 1. Die Anaconda Distribution herunterladen (https://www.anaconda.com/download)
    ![Anaconda_Logo_RGB_Corporate](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/a3ec9da3-e883-493f-9fbf-dfd9866e5af5)
 
-2. Die Neuste Python Version herunterladen 
+2. Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 3. Kopieren sie die folgenden PIP Installs ihren Code Editor (Wir empfehlen VS Code)
    HIER BILD/Screenshot EINFÜGEN
 4. Laden sie das Dataset herunter ()
