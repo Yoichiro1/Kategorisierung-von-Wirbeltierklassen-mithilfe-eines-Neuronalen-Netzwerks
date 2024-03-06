@@ -1,3 +1,10 @@
+## Vorwort
+Die folgende READMDE wurde nur für Benutzer von Windows 10/11 verfasst.
+
+Clarify Licensing and Legal
+
+
+
 ## Vorbereitung:
 1. Die Anaconda Distribution herunterladen (https://www.anaconda.com/download)
    ![Anaconda_Logo_RGB_Corporate](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/a3ec9da3-e883-493f-9fbf-dfd9866e5af5)
