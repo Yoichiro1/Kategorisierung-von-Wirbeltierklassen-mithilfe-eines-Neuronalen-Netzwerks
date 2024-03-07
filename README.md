@@ -72,7 +72,13 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 
 ## PIP Installs:
-### Um Zeit zu sparen, einfach: 'pip install -r requirements.txt' in powershell kopieren
+### Um Zeit zu sparen, einfach: 
+
+```
+pip install -r requirements.txt
+```
+in powershell kopieren
+
 1.  pip install cv2 (old nn_main)
 2.  pip install tk
 3.  pip install tensorflow
