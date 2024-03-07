@@ -46,6 +46,9 @@ Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 
+![Screenshot (9)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/b7b3ab92-65c8-4e74-9826-4d89fdf0f4c4)
+
+
 ## Kopieren sie die PIP Installs ihren Code Editor (Wir empfehlen VS Code)
    HIER BILD/Screenshot EINFÜGEN
  
