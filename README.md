@@ -12,7 +12,7 @@ Clarify Licensing and Legal
 2. Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 3. Kopieren sie die folgenden PIP Installs ihren Code Editor (Wir empfehlen VS Code)
    HIER BILD/Screenshot EINFÜGEN
-   ![Screenshot (1)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/8fdaa339-b610-4541-ad7b-ee274095e3d3)
+ 
 
 5. Laden sie das Dataset herunter ()
    HIER SCREENSHOT EINFÜGEN
