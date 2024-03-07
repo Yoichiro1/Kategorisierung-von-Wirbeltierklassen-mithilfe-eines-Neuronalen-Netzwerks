@@ -70,9 +70,13 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 ### Das fertige Modell als Datei speichern
 
 
-## Das Netwerk anwemden
+## Das Netwerk anwenden
 
-### 
+### Ein Modell herunterladen
+
+Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. ()
+
+### nn_load starten
 
 
 
