@@ -60,10 +60,19 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 # Vorgehen:
 ## Selbst ein Netzwerk Trainieren
-1. 
+
+### Ein Dataset selbst erschaffen
+
+### Dataset in den Code Importieren
+
+### nn_main_short gemäss ihren Ressourcen und Wünschen konfigurieren
+
+### Das fertige Modell als Datei speichern
+
 
 ## Das Netwerk anwemden
 
+### 
 
 
 
