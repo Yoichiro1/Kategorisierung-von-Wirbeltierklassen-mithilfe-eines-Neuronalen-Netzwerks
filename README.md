@@ -72,7 +72,8 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 
 ## PIP Installs:
-### Um Zeit zu sparen, einfach: 
+
+Um Zeit zu sparen, einfach: 
 
 ```
 pip install -r requirements.txt
