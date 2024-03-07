@@ -46,7 +46,7 @@ Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 
-## Kopieren sie die folgenden PIP Installs ihren Code Editor (Wir empfehlen VS Code)
+## Kopieren sie die PIP Installs ihren Code Editor (Wir empfehlen VS Code)
    HIER BILD/Screenshot EINFÜGEN
  
 
