@@ -13,6 +13,9 @@ Clarify Licensing and Legal
 ### Den Anaconda Installer starten
 ![Screenshot (3)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/60558f8e-0d72-43f4-a420-51300d460938)
 
+Hier "Next" clicken
+![Screenshot (4)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/6c9a5c54-379b-4755-9357-e28a2fddc537)
+
 
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 
