@@ -9,6 +9,10 @@ Clarify Licensing and Legal
 ## Die Anaconda Distribution herunterladen (https://www.anaconda.com/download)
    ![Anaconda_Logo_RGB_Corporate](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/a3ec9da3-e883-493f-9fbf-dfd9866e5af5)
 
+### Den Anaconda Installer starten
+![Screenshot (3)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/60558f8e-0d72-43f4-a420-51300d460938)
+
+
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 
 ## Kopieren sie die folgenden PIP Installs ihren Code Editor (Wir empfehlen VS Code)
