@@ -11,51 +11,36 @@ Clarify Licensing and Legal
    ![Anaconda_Logo_RGB_Corporate](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/a3ec9da3-e883-493f-9fbf-dfd9866e5af5)
 
 ### Den Anaconda Installer starten
+
+
 ![Screenshot (3)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/60558f8e-0d72-43f4-a420-51300d460938)
+Hier "Next" clicken.
 
-
-<pre>
-
-</pre>
 
 
 ![Screenshot (4)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/6c9a5c54-379b-4755-9357-e28a2fddc537)
 
-Hier "Next" clicken.
+Stimmen sie den AGBs zu.
 
-<pre>
-
-</pre>
 
 
 ![Screenshot (5)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/7cf7f7c2-fcc3-4c4a-b7be-b50857d9212d)
 
-Stimmen sie den Allgemeinen Geschäftsbedingungen zu.
+Installieren sie nur für sich selbst Anaconda.
 
 
-<pre>
-
-</pre>
 
 
 ![Screenshot (6)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/50bb9cca-d802-4ccb-8803-29836e98ceef)
 
-Installieren sie nur für sich selbst Anaconda.
-
-<pre>
-
-</pre>
+Konfigurieren sie den Ort, an welchem sie das Programm haben wollen. (nach erstem stratup müssen sie es nicht mehr starten)
 
 
 ![Screenshot (7)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/0f588711-36b8-42f1-9349-d5006df90a2b)
 
-Konfigurieren sie den Ort, an welchem sie das Programm haben wollen. (nach erstem stratup müssen sie es nicht mehr starten)
-
 Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
-<pre>
 
-</pre>
 
 
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
