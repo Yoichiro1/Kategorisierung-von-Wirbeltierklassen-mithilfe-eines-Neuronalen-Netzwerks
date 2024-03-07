@@ -31,7 +31,7 @@ Konfigurieren sie den Ort, an welchem sie das Programm haben wollen. (nach erste
 
 ![Screenshot (7)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/0f588711-36b8-42f1-9349-d5006df90a2b)
 
-Mir empfehlen ihnene, diese Einstellungen auszuwählen.
+Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
 ## Die Neuste Python Version herunterladen (https://www.python.org/downloads/)
 
