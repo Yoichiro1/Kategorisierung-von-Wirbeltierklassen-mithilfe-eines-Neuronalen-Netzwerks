@@ -14,6 +14,7 @@ Clarify Licensing and Legal
 
 
 ![Screenshot (3)](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/60558f8e-0d72-43f4-a420-51300d460938)
+
 Hier "Next" clicken.
 
 
