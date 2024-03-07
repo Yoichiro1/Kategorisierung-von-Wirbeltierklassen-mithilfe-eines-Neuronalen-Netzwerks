@@ -65,7 +65,7 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 ### Dataset in den Code Importieren
 
-### nn_main_short gemäss ihren Ressourcen und Wünschen konfigurieren
+### Den Code für nn_main_short gemäss ihren Ressourcen und Wünschen konfigurieren
 
 ### Das fertige Modell als Datei speichern
 
@@ -76,7 +76,7 @@ SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. ()
 
-### nn_load starten
+### Den Code für nn_load starten
 
 
 
