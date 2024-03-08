@@ -50,8 +50,28 @@ Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
 
 ## Kopieren sie die PIP Installs ihren Code Editor (Wir empfehlen VS Code)
-   HIER BILD/Screenshot EINFÜGEN
  
+# PIP Installs:
+
+Um Zeit zu sparen, einfach: 
+
+```
+pip install -r requirements.txt
+```
+in powershell kopieren
+
+![PA PIP Install Screeenshot - Copy](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/370cf232-31ef-4bd1-862b-1585f80c360a)
+
+1.  pip install cv2 (old nn_main)
+2.  pip install tk
+3.  pip install tensorflow
+4.  pip install keras
+5.  pip install PIL (old nn_main)
+6.  pip install numpy
+7.  pip install bing_image_downloader (web scraper)
+8.  pip install shutil
+9.  pip install matplotlib
+
 
 5. Laden sie das Dataset herunter ()
    HIER SCREENSHOT EINFÜGEN
@@ -98,27 +118,4 @@ Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortraini
 Konfigurieren sie die Bildergrössen-Variable auf die des Netzwerks. Diese steht bei unserem Netzwerk im Dateinamen, oder auf einer beigefügten .txt File.
 
 
-
-
-
-## PIP Installs:
-
-Um Zeit zu sparen, einfach: 
-
-```
-pip install -r requirements.txt
-```
-in powershell kopieren
-
-![PA PIP Install Screeenshot - Copy](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/370cf232-31ef-4bd1-862b-1585f80c360a)
-
-1.  pip install cv2 (old nn_main)
-2.  pip install tk
-3.  pip install tensorflow
-4.  pip install keras
-5.  pip install PIL (old nn_main)
-6.  pip install numpy
-7.  pip install bing_image_downloader (web scraper)
-8.  pip install shutil
-9.  pip install matplotlib
 
