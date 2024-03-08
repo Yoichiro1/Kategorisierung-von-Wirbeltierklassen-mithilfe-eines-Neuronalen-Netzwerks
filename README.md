@@ -110,6 +110,8 @@ pip install -r requirements.txt
 ```
 in powershell kopieren
 
+![PA PIP Install Screeenshot - Copy](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/370cf232-31ef-4bd1-862b-1585f80c360a)
+
 1.  pip install cv2 (old nn_main)
 2.  pip install tk
 3.  pip install tensorflow
