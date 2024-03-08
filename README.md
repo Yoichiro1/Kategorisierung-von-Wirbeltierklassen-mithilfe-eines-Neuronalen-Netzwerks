@@ -73,7 +73,6 @@ in powershell kopieren
 9.  pip install matplotlib
 
 
-Poopy
 ## Laden sie das Dataset herunter ()
    HIER SCREENSHOT EINFÜGEN
 ## Change the Directory (dir) variables (Code Containing such variables will have a comment just under all the library imports)
