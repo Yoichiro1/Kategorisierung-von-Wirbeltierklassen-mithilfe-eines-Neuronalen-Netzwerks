@@ -51,7 +51,7 @@ Mir empfehlen ihnen, diese Einstellungen auszuwählen.
 
 ## Kopieren sie die PIP Installs ihren Code Editor (Wir empfehlen VS Code)
  
-# PIP Installs:
+### PIP Installs:
 
 Um Zeit zu sparen, einfach: 
 
@@ -73,9 +73,10 @@ in powershell kopieren
 9.  pip install matplotlib
 
 
-5. Laden sie das Dataset herunter ()
+Poopy
+## Laden sie das Dataset herunter ()
    HIER SCREENSHOT EINFÜGEN
-6. Change the Directory (dir) variables (Code Containing such variables will have a comment just under all the library imports)
+## Change the Directory (dir) variables (Code Containing such variables will have a comment just under all the library imports)
 SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 
