@@ -95,7 +95,7 @@ Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortraini
 
 ### Den Code für nn_load starten
 
-
+Konfigurieren sie die Bildergrössen-Variable auf die des Netzwerks. Diese steht bei unserem Netzwerk im Dateinamen, oder auf einer beigefügten .txt File.
 
 
 
