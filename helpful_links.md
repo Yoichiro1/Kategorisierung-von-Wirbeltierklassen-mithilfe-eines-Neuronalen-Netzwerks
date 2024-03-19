@@ -12,6 +12,10 @@ https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-
 
 https://playground.tensorflow.org
 
+### Gradient Descent
+
+https://www.youtube.com/watch?v=sDv4f4s2SB8
+
 
 
 ## **Python Tutorials:**
