@@ -1,4 +1,4 @@
-#Alle Module importieren
+# Alle Module importieren
 import numpy as np
 import cv2
 import random as rd
@@ -14,9 +14,13 @@ import pandas
 import matplotlib.pyplot as plt
 
 
-#Den absoluten Pfad des Ordners für Trainings- und Validierungsbilder einsetzen
+# Den absoluten Pfad des Ordners für Trainings- und Validierungsbilder einsetzen
 train_dir = r"C:\Users\aokik\pyworks\ds_train_images_unaugmentated\ds_train_images"
 test_dir = r"C:\Users\aokik\pyworks\allimages"
+
+# Anzahl Epochen des Trainingsverfahren (In jeder Epoche werden alle Daten dem Netzwerk gefüttert.)
+num_epochs = 20
+
 
 #Bilder laden
 train_ds = keras.utils.image_dataset_from_directory(
@@ -33,7 +37,7 @@ validation_ds = keras.utils.image_dataset_from_directory(
     image_size=(50, 50))
 
 
-#Bilder vorbereiten
+# Bilder vorbereiten
 def preprocess_image(image, label):
     image = tf.cast(image, tf.float32) # Wandelt die Daten der Bilder in den Datentyp "float32" um (Pixelwerte im Bereich 0-255) GPT
     image = image / 255.0 # Dividiert die Pixelwerte durch 255, damit sie im Bereich von 0-1 sind. Dient der Stabiliät des Netzwerks.
@@ -65,7 +69,7 @@ def apply_Model():
         layers.Dropout(0.2),
         layers.Dense(64, activation = "relu"),
         layers.Dropout(0.2),
-        layers.Dense(5, activation="softmax"), # Output-Layer mit 5 Neuronen für 5 Klassen und mit der Aktivierungsfunktion "softmax" (wandelt jede Ausgabe in Dezimaldarstellung des Anteils der Ausgabe von der Summe der Ausgaben um)
+        layers.Dense(5, activation="softmax"), # Output-Layer mit 5 Neuronen für 5 Klassen und mit der Aktivierungsfunktion "softmax"
     ])
     # Modell für das Training konfigurieren
     global history
@@ -74,7 +78,7 @@ def apply_Model():
                   metrics=['accuracy']) # Definiert die Metrik (beurteil das Modell) als "accuracy" (gibt die Genauigkeit in Dezimaldarstellung an)
     
     # Modell trainieren
-    model.fit(train_ds, epochs=20, validation_data = validation_ds) # 20 Epochen, nach jeder Epoche wird das Modell mit den Validierungsdaten getestet
+    model.fit(train_ds, epochs=num_epochs, validation_data = validation_ds) # Trainingsverfahren des Modells, nach jeder Epoche wird das Modell mit den Validierungsdaten getestet
 
     # Modell speichern
     filename_given = False
@@ -89,13 +93,14 @@ def apply_Model():
   
 apply_Model()
 
-
+# Kopiert
 # Lernverlauf des Modells für Trainings- und Testdaten anzeigen lassen
 plt.plot(history.history['accuracy'])
 plt.plot(history.history['val_accuracy'])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
+plt.xticks(range(1, num_epochs + 1)) # GPT
 plt.legend(['Train', 'Validation'], loc='upper left')
 plt.show()
 plt.plot(history.history['loss'])
@@ -103,6 +108,7 @@ plt.plot(history.history['val_loss'])
 plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
+plt.xticks(range(1, num_epochs + 1)) # GPT
 plt.legend(['Train', 'Validation'], loc='upper left')
 plt.show()
 
