@@ -109,7 +109,7 @@ Hier können sie die Anzahl Schichten oder Neuronen konnfigurieren
 
 ### Das fertige Modell als Datei speichern
 
-![Screenshot 2024-04-21 195851](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-von-Neuronalen-Netzwerken/assets/158302206/5698a41b-ff42-49c4-ae2b-ca0d5eba2fbd)
+![Screenshot 2024-04-21 195851](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-von-Neuronalen-Netzwerken/assets/158302206/14b81dc6-fed1-4925-909a-70ba6cab0e4c)
 
 Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespeichert.
 
