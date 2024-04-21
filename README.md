@@ -73,10 +73,8 @@ in powershell kopieren
 9.  pip install matplotlib
 
 
-## Laden sie das Dataset herunter ()
+## Laden sie ein Dataset herunter oder erstellen sie ihr eigenes
    HIER SCREENSHOT EINFÜGEN
-## Change the Directory (dir) variables (Code Containing such variables will have a comment just under all the library imports)
-SCREEMSHOT MIT PFEIL HIER EINFÜGEN
 
 
 
@@ -110,6 +108,8 @@ Hier "test_dir" und "train_dir" als Weg zur directory definieren.
 Hier können sie die Anzahl Schichten oder Neuronen konnfigurieren
 
 ### Das fertige Modell als Datei speichern
+
+![Screenshot 2024-04-21 195851](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-von-Neuronalen-Netzwerken/assets/158302206/5698a41b-ff42-49c4-ae2b-ca0d5eba2fbd)
 
 Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespeichert.
 
