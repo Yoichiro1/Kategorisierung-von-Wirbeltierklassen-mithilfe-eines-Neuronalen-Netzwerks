@@ -19,7 +19,7 @@ def ordener_verschieben(ordner_pfad):
             x = random.randint(1, 100) # Wählt eine zufällige Zahl zwischen 1 und 100 aus.
         else:
             x = 1
-        if x <= 50: # Eine natürliche Zahl angeben. Diese Zahl entspricht dem Prozentsatz, das ein Bild verschoben wird.
+        if x <= 50: # Eine natürliche Zahl angeben. Diese Zahl entspricht dem Prozentsatz, dass ein Bild verschoben wird.
             datei_pfad = os.path.join(ordner_pfad, datei)
             neuer_dateiname = f"_{number}.jpg" # Einen beliebigen Dateinamen angeben. (Beachten, dass die Dateinamen schon vorhanden sind.)
             ziel_datei_pfad = os.path.join(ziel_ordner_pfad, neuer_dateiname)
