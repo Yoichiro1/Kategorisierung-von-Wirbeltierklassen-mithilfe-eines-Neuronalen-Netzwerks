@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import random as rd
 
-input_directory = r'C:\Users\aokik\pyworks\testest' # Den absoluten Pfad zum Ordner angeben.
+input_directory = r'' # Den absoluten Pfad zum Ordner angeben.
 
 # Data augmentieren
 def augment_images_in_directory(input_dir):
