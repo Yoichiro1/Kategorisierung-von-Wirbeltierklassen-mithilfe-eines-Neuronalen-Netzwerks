@@ -117,7 +117,7 @@ Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespe
 
 ### Ein Modell herunterladen
 
-Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. ()
+Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. (INSERT KAGGLE LINK)
 
 ### Den Code für nn_load starten
 
