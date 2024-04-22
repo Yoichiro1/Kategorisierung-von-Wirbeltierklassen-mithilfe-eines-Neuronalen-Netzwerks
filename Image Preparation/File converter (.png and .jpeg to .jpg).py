@@ -15,7 +15,7 @@ for filename in os.listdir(dir):
     image_path = os.path.join(dir, filename)
     Bild = Image.open(image_path)
     
-    # konvertiert das Bild is RGB-Format, falls das Bild nicht eine ".jpg"-Datei ist, damit das Neuronale Netzwerk alle Bilder verwenden kann
+    # konvertiert das Bild ins RGB-Format, falls das Bild nicht eine ".jpg"-Datei ist, damit das Neuronale Netzwerk alle Bilder verwenden kann
     if ext.lower() == '.gif': 
         Bild.seek(0)  # Das Bild wird zum ersten Frame zurückgespult 
         Bild = Bild.convert("RGB")  
