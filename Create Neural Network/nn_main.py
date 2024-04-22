@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 
 
 # Den absoluten Pfad des Ordners für Trainings- und Testbilder einsetzen
-train_dir = r"C:\Users\aokik\pyworks\ds_train_images_unaugmentated\ds_train_images"
-test_dir = r"C:\Users\aokik\pyworks\allimages"
+train_dir = r""
+test_dir = r""
 
 # Anzahl Epochen des Trainingsverfahren (In jeder Epoche werden alle Daten dem Netzwerk gefüttert.)
 num_epochs = 20
