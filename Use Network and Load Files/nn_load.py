@@ -163,9 +163,9 @@ prediction_label = Label(r, text="", bg= '#282927', font= (None, 16))
 prediction_label.pack()
 
 # Buttons
-button_image = tk.Button(r, text='Upload image', width=25, command=bild_auswählen, bg= '#303633' , fg='white')
-button_nn = tk.Button(r, text='Upload your Neural Network', width=25, command=nn_auswählen, bg= '#303633' , fg='white')
-button_predict = tk.Button(r, text='Predict', width=25, command=predict, bg= '#303633' , fg='white')
+button_image = tk.Button(r, text='Upload image', width=25, command=bild_auswählen, bg= '#303633' , fg='white') #Schafft den Knopf für das Auswählen eines Bilds
+button_nn = tk.Button(r, text='Upload your Neural Network', width=25, command=nn_auswählen, bg= '#303633' , fg='white')#Schafft den Knopf für das Auswählen Netzwerks
+button_predict = tk.Button(r, text='Predict', width=25, command=predict, bg= '#303633' , fg='white')#Schafft den Knopf für das 
 button_quit = tk.Button(r, text='Quit', width=25, command=r.destroy, bg= '#303633' , fg='white')
 button_image.pack()
 button_nn.pack()
