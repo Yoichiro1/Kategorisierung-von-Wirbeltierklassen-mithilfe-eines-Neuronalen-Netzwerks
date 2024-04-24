@@ -97,7 +97,7 @@ Hier "test_dir" und "train_dir" als Weg zur directory definieren.
 
 ![image](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/4a3be24e-0377-4be3-8733-ec2fc6265b0b)
 
-Hier können sie die Anzahl Schichten oder Neuronen konnfigurieren
+Hier können sie die Anzahl Schichten oder Neuronen konfigurieren
 
 ### Das fertige Modell als Datei speichern
 
