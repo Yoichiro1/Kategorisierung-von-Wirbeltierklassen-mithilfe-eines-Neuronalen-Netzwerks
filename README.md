@@ -1,7 +1,7 @@
 # Vorwort
 Die folgende READMDE wurde nur für Benutzer von Windows 10/11 verfasst, die Programme wurden nur mit Python 3.11/3.12 getestet. 
 
-Clarify Licensing and Legal
+
 
 
 
