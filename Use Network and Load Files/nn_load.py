@@ -8,6 +8,8 @@ from PIL import Image, ImageTk
 import numpy as np
 import shutil
 
+#Definieren von Variabeln
+
 bild_given = False
 nn_given = False
 folder_name = ""
@@ -86,11 +88,11 @@ def reformat_image():
     elif ext.lower() == '.png':
         Bild = Bild.convert('RGB')
     
-    # Create a copy of the original image
+    # Schafft eine Kopie des Originales Bilds
     copy_path = os.path.join(ordnerpfad, f"{name}_copy{ext}")
     shutil.copyfile(folder_selected, copy_path)
 
-    # Resize the copied image
+    #Konfiguriert die Grösse der Kopie des Bilds
     img = Image.open(copy_path)
     img = img.resize((50,50))
     img.save(copy_path)
@@ -99,6 +101,7 @@ def reformat_image():
     print(image)
 
 def predict():
+    #Funktion, die das Netzwerk wirklich verwendet
     global bild_given, nn_given
     global ordnerpfad
     global nn_selected
@@ -130,7 +133,7 @@ def predict():
         elif prediction == prediction_v:
             prediction_tier = "Vogel"
         
-        # Display the prediction beneath the image preview
+        # Zeigt das Output des Netzwerk unter dem Bild
         prediction_label.config(text="Prediction: " + prediction_tier, fg= 'white')
     else:
         r5 = Tk()
@@ -138,7 +141,7 @@ def predict():
         w5.pack()
         r5.mainloop()
 
-    # Delete the copied image after processing
+    # Löscht die Kopie nach dessen Verwendung
     if os.path.exists(copy_path):
         os.remove(copy_path)
     else:
@@ -148,17 +151,17 @@ def predict():
 r = tk.Tk()
 r.geometry("1080x1920")
 r.title('Neuronales Netzwerk')
-r.configure(bg='#282927')  # Set background color
+r.configure(bg='#282927')  # Setzt Hintergrundfarbe
 
 # Neural Network Label
 nn_label = Label(r, text="", bg='#282927', fg='white', font= (None, 16))
 nn_label.pack()
 
-# Load and display the image
+# Ladet und Zeigt eine Vorschau des Bildes
 label_preview = Label(r)
 label_preview.pack()
 
-# Display prediction label
+# Zeigt die Vorhersage des Netzwerks
 prediction_label = Label(r, text="", bg= '#282927', font= (None, 16))
 prediction_label.pack()
 
