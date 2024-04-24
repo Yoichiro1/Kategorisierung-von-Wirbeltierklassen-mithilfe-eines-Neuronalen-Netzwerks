@@ -62,19 +62,9 @@ in powershell kopieren
 
 ![PA PIP Install Screeenshot - Copy](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/370cf232-31ef-4bd1-862b-1585f80c360a)
 
-1.  pip install cv2 (old nn_main)
-2.  pip install tk
-3.  pip install tensorflow
-4.  pip install keras
-5.  pip install PIL (old nn_main)
-6.  pip install numpy
-7.  pip install bing_image_downloader (web scraper)
-8.  pip install shutil
-9.  pip install matplotlib
-
 
 ## Laden sie ein Dataset herunter oder erstellen sie ihr eigenes
-   HIER SCREENSHOT EINFÜGEN
+   ![Screenshot 2024-04-24 214435](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/9dc3b65e-eff3-4f02-abec-70be09feaf87)
 
 
 
@@ -117,9 +107,11 @@ Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespe
 
 ### Ein Modell herunterladen
 
-Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. (INSERT KAGGLE LINK)
+Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. (https://www.kaggle.com/datasets/yoichiro1/kategorisierung-von-wirbeltierklassen)
 
 ### Den Code für nn_load starten
+
+![Screenshot 2024-04-14 182032](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/d15da370-5b7f-4181-be59-740bafe6b153)
 
 Konfigurieren sie die Bildergrössen-Variable auf die des Netzwerks. Diese steht bei unserem Netzwerk im Dateinamen, oder auf einer beigefügten .txt File.
 
