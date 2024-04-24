@@ -95,6 +95,8 @@ Hier "test_dir" und "train_dir" als Weg zur directory definieren.
 
 ### Den Code für nn_main_short gemäss ihren Ressourcen und Wünschen konfigurieren
 
+![image](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/4a3be24e-0377-4be3-8733-ec2fc6265b0b)
+
 Hier können sie die Anzahl Schichten oder Neuronen konnfigurieren
 
 ### Das fertige Modell als Datei speichern
@@ -107,7 +109,12 @@ Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespe
 
 ### Ein Modell herunterladen
 
+![Screenshot 2024-04-24 214435](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/760d2744-05b4-4559-97ba-91a6c3e8e24f)
+
+
 Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. (https://www.kaggle.com/datasets/yoichiro1/kategorisierung-von-wirbeltierklassen)
+
+
 
 ### Den Code für nn_load starten
 
