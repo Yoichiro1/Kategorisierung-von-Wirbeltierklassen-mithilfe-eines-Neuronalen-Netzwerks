@@ -94,7 +94,7 @@ def reformat_image():
 
     #Konfiguriert die Grösse der Kopie des Bilds
     img = Image.open(copy_path)
-    img = img.resize((100,100))
+    img = img.resize((50,50))
     img.save(copy_path)
     image = np.array(img, dtype=np.float32) / 255.0
     image = np.expand_dims(image, axis=0)
