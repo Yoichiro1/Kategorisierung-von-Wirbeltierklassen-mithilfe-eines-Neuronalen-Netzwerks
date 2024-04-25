@@ -129,7 +129,7 @@ Hier können sie die Anzahl Schichten oder Neuronen konfigurieren
 
 Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespeichert.
 
-## Das Netwerk anwenden
+## Das Netzwerk anwenden
 
 ### Ein Modell herunterladen
 
