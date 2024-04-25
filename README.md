@@ -73,9 +73,20 @@ in powershell kopieren
 
 ### Windows Registry Editor öffnen
 ![Screenshot 2024-04-25 113718](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/6b3382b4-3a7b-476a-b221-50c0b7695c97)
-### Current Control Set auswählenn
+### Current Control Set auswählen
 ![Screenshot 2024-04-25 113749](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/1c2865eb-f104-477c-bf1b-1c3b6a3b3644)
-###
+### "Policies" Auswählen
+![Screenshot 2024-04-25 113804](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/82fae17e-1bd8-4b9f-8638-a14a59bd9869)
+### Herunterscrollen und "FileSystem" auswählen
+![Screenshot 2024-04-25 114000](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/6716f491-9f56-4082-8768-bb175d2f3a5e)
+
+### Long Path Enabled auswählen
+![Screenshot 2024-04-25 114030](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/5c380b15-0ecf-4c54-bac4-f4fede87b3df)
+
+### Den Wert zu 1 ändern und speichern
+![Screenshot 2024-04-25 114114](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/cf917a16-a7df-4eee-a44a-67d4a730da25)
+
+
 ## Laden sie ein Dataset herunter oder erstellen sie ihr eigenes
    ![Screenshot 2024-04-24 214435](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/9dc3b65e-eff3-4f02-abec-70be09feaf87)
 
