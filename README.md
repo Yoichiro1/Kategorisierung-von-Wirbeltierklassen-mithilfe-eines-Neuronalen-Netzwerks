@@ -69,7 +69,13 @@ in powershell kopieren
 
 ![PA PIP Install Screeenshot - Copy](https://github.com/Yoichiro1/Neuronales-Netzwerk/assets/158302206/370cf232-31ef-4bd1-862b-1585f80c360a)
 
+## Long Filename aktivieren
 
+### Windows Registry Editor öffnen
+![Screenshot 2024-04-25 113718](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/6b3382b4-3a7b-476a-b221-50c0b7695c97)
+### Current Control Set auswählenn
+![Screenshot 2024-04-25 113749](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/1c2865eb-f104-477c-bf1b-1c3b6a3b3644)
+###
 ## Laden sie ein Dataset herunter oder erstellen sie ihr eigenes
    ![Screenshot 2024-04-24 214435](https://github.com/Yoichiro1/Kategorisierung-von-Wirbeltierklassen-mithilfe-eines-Neuronalen-Netzwerks/assets/158302206/9dc3b65e-eff3-4f02-abec-70be09feaf87)
 
@@ -127,6 +133,7 @@ Einfach
 ```
 cd (Name Ihres Ordners hier)
 ```
+In powershell kopieren
 
 ### Den Code für nn_load starten
 
