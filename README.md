@@ -121,7 +121,12 @@ Den Dateinamen am Ende hineinschreiben und die Datei wird mit diesem Namen gespe
 
 Wenn sie nicht selbst ein Modell haben, können sie hier eines unserer vortrainierten Modelle herunterladen. (https://www.kaggle.com/datasets/yoichiro1/kategorisierung-von-wirbeltierklassen)
 
+### Den Ausgewählten Order als "current working Directory" festsetzen
 
+Einfach
+```
+cd (Name Ihres Ordners hier)
+```
 
 ### Den Code für nn_load starten
 
